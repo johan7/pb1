@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!-- Created with iSpring --><!-- 720 540 --><!--type html --><!--mainFolder ./ --><!--content quiz -->
+<html style=background-color:#838689;>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"/>
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<title>Untitled Quiz</title>
+	<link rel="apple-touch-icon-precomposed" href="data/apple-touch-icon.png"/>
+	<link rel="shortcut icon" type="image/ico" href="data/favicon.ico"/>
+	
+	<style>html, body {background-color:#838689;}</style>
+</head>
+<body>
+<div id="preloader"></div>
+<script src="data/player.js"></script>
+<div id="content"></div>
+<script>
+	(function(startup){
+		function start()
+		{
+			var quizJson = "";
+			var skinSettingsJson = {
+    "appearance" : {
+        "hidePlayerFrame" : false,
+        "hideSlideBackground" : false,
+        "questionList" : {
+            "enabled" : true,
+            "showAwardedScore" : true,
+            "showScore" : true,
+            "showStatusIcon" : true
+        },
+        "scoreInfo" : {
+            "displayCumulativeScore" : true,
+            "displayQuestionScore" : true
+        }
+    },
+    "colors" : {
+        "button.content.normal" : "#545454",
+        "button.content.over" : "#545454",
+        "button.normal" : "#FCFCFC",
+        "button.over" : "#F3F3F3",
+        "buttons.menus.highlight" : "#FFF7CF",
+        "buttons.menus.highlight.second" : "#FFED85",
+        "page.background" : "#838689",
+        "player.background" : "#CCCCCC",
+        "radio.check.highlight" : "rgba(254, 215, 0, 0.3)",
+        "topPanel.text" : "#1A1A1A"
+    }
+};
+			QuizPlayerSolid.start("q_FC6A64FD-D66A-4FC0-ABC0-B094266D26F1", quizJson, skinSettingsJson, "content", onPlayerInit, 720, 540);
+			function onPlayerInit(player)
+			{
+				
+				var preloader = document.getElementById("preloader");
+				preloader.parentNode.removeChild(preloader);
+			}
+		}
+
+		if (startup)
+			startup(start);
+		else
+			start();
+	})();
+</script>
+frghjklñ
+</body>
+</html>
